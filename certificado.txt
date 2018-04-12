@@ -1,0 +1,26 @@
+openssl genrsa -out millave.key 4096 //generar llave
+openssl req -new -days 365 -key millave.key -out misolicitud.csr
+Country Name[AU]:MX
+State or Province Name: CDMX
+Locality Name: Ciudad Universiaria
+Organization Name: FCA
+Organizational Unit Name: Informatica
+Common Name: www.eresendiz.org
+Email Address[]: paskycamacho@gmail.com
+openssl x509 -req -days 365 -signkey millave.key -in misolicitud.csr -out micertificado.crt
+mv millave.key /etc/ssl/private/
+mv micertificado.crt /etc/ssl/certs/
+chmod 644 /etc/ssl/certs/micertificado.crt
+chmod 640 /etc/ssl/private/millave.key
+cd /etc/apache2/sites-available/
+a2ensite registro-ssl.conf
+systemctl restart apache2
+a2enmod ssl
+
+
+
+
+*nota: let's encrypt firma certificado gratuito por 3 meses.
+
+
+

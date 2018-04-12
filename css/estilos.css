@@ -1,0 +1,43 @@
+*{ margin: 5px; padding:0}
+body{
+background-color:#0B0B3B;
+
+}
+
+
+h1 {
+ font-face:arial;
+ color: #58FAF4;
+ font-size: 30px;
+ padding-bottom:15px;
+font-style:oblique;
+
+}
+
+.etiquetas{
+ font-family:serif;
+ color: #FFFFFF;
+ font-size: 16px;
+ padding-bottom:5px;
+ padding-top: 10px;
+ margin-bottom: : 500px;
+
+}
+.cajas{
+border-style: solid;
+border-color: #5858FA;
+border-radius: 5px;
+margin-left:  100px;
+padding-left:100px;
+padding-bottom:20px;
+margin-left: : 350px;
+display : block;
+
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 340px;
+  height  : 10px;
+
+  resize  : none;
+  overflow: auto;
+}

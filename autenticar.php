@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<<title>Creditos</title>
+<title>Creditos</title>
  <meta charset="utf-8">
  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-	<div>
-		<?php
+
+<?php
 //Incluir conexiòn
 
 include 'conexion.php';

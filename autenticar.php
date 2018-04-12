@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Creditos</title>
+<title>Autenticar</title>
  <meta charset="utf-8">
  <link rel="stylesheet" href="css/footer.css">
 </head>
